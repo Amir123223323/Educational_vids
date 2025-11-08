@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="fa">
+    <head>
+        <title>Communication_1 Dr.Mohammadi </title>
+        <link rel="stylesheet" href="styles.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <main>
+            <div id="main_id">
+                <p>کلاس ضبط شده را انتخاب کنید</p>
+                <form>
+                    <select name="course" id="course" style="font-family: VazirFont;">
+                        <option value="1" id="Mohammadi">مخابرات1 دکتر محمدی </option>
+                        <optgroup label="کنترل خطی">
+                            <option value="2" id="talebi"> دکتر طالبی</option>
+                            <option value="3" id="sharifi">دکتر شریفی</option>
+                        </optgroup>
+                        
+                    </select>
+                </form>
+                <p>شماره جلسه را وارد کنید :</p>
+                <div><input type="number"  id="number" placeholder="1-32" ></div>
+                <div id="butt"><button type="button" onclick="createlink()" style="font-family: VazirFont;">جستجو</button></div>
+                <a id="link"></a>
+            </div>
+        </main>
+        <script src="script.js"></script>
+    </body>
+</html>`
