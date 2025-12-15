@@ -161,13 +161,45 @@ const Gametheory = [
   "https://www.aparat.com/v/yzyjq8r?playlist=11490501",
   "https://www.aparat.com/v/ymnwu10?playlist=11490501"
 ];
+const links_Machine1 = [
+    "https://blue.aut.ac.ir/playback/presentation/2.3/bc1da1512eee0065baecef0391566a977708ddd5-1632026502038",
+    "https://blue.aut.ac.ir/playback/presentation/2.3/bc1da1512eee0065baecef0391566a977708ddd5-1632199325599",
+    "https://blue.aut.ac.ir/playback/presentation/2.3/bc1da1512eee0065baecef0391566a977708ddd5-1632634860491",
+    "https://blue.aut.ac.ir/playback/presentation/2.3/bc1da1512eee0065baecef0391566a977708ddd5-1632807671761",
+    "https://blue.aut.ac.ir/playback/presentation/2.3/bc1da1512eee0065baecef0391566a977708ddd5-1633239663829",
+    "https://blue.aut.ac.ir/playback/presentation/2.3/bc1da1512eee0065baecef0391566a977708ddd5-1633844444772",
+    "https://blue.aut.ac.ir/playback/presentation/2.3/bc1da1512eee0065baecef0391566a977708ddd5-1634017230955",
+    "https://blue.aut.ac.ir/playback/presentation/2.3/bc1da1512eee0065baecef0391566a977708ddd5-1634449228814",
+    "https://blue.aut.ac.ir/playback/presentation/2.3/bc1da1512eee0065baecef0391566a977708ddd5-1634622039971",
+    "https://blue.aut.ac.ir/playback/presentation/2.3/bc1da1512eee0065baecef0391566a977708ddd5-1635226817155",
+    "https://blue.aut.ac.ir/playback/presentation/2.3/bc1da1512eee0065baecef0391566a977708ddd5-1635658891324",
+    "https://blue.aut.ac.ir/playback/presentation/2.3/bc1da1512eee0065baecef0391566a977708ddd5-1635831581492",
+    "https://blue.aut.ac.ir/playback/presentation/2.3/bc1da1512eee0065baecef0391566a977708ddd5-1636263690511",
+    "https://blue.aut.ac.ir/playback/presentation/2.3/bc1da1512eee0065baecef0391566a977708ddd5-1636436463629",
+    "https://blue.aut.ac.ir/playback/presentation/2.3/bc1da1512eee0065baecef0391566a977708ddd5-1636626320232",
+    "https://blue.aut.ac.ir/playback/presentation/2.3/bc1da1512eee0065baecef0391566a977708ddd5-1636868522124",
+    "https://blue.aut.ac.ir/playback/presentation/2.3/bc1da1512eee0065baecef0391566a977708ddd5-1637041154803",
+    "https://blue.aut.ac.ir/playback/presentation/2.3/bc1da1512eee0065baecef0391566a977708ddd5-1637473287819",
+    "https://blue.aut.ac.ir/playback/presentation/2.3/bc1da1512eee0065baecef0391566a977708ddd5-1637646094815",
+    "https://blue.aut.ac.ir/playback/presentation/2.3/bc1da1512eee0065baecef0391566a977708ddd5-1638078089684",
+    "https://blue.aut.ac.ir/playback/presentation/2.3/bc1da1512eee0065baecef0391566a977708ddd5-1638250910972",
+    "https://blue.aut.ac.ir/playback/presentation/2.3/bc1da1512eee0065baecef0391566a977708ddd5-1638682882403",
+    "https://blue.aut.ac.ir/playback/presentation/2.3/bc1da1512eee0065baecef0391566a977708ddd5-1638855697276",
+    "https://blue.aut.ac.ir/playback/presentation/2.3/bc1da1512eee0065baecef0391566a977708ddd5-1639287674176",
+    "https://blue.aut.ac.ir/playback/presentation/2.3/bc1da1512eee0065baecef0391566a977708ddd5-1639460474916",
+    "https://blue.aut.ac.ir/playback/presentation/2.3/bc1da1512eee0065baecef0391566a977708ddd5-1639892470364",
+    "https://blue.aut.ac.ir/playback/presentation/2.3/bc1da1512eee0065baecef0391566a977708ddd5-1640065265040",
+    "https://blue.aut.ac.ir/playback/presentation/2.3/bc1da1512eee0065baecef0391566a977708ddd5-1640497199422",
+    "https://blue.aut.ac.ir/playback/presentation/2.3/bc1da1512eee0065baecef0391566a977708ddd5-1642483464603"
+];
 const passwords = {"matlab":"bmematlab","simulink":"bmesimulink"};
 const teachers = {"دکتر محمدی":[links_communication_DR_mohammadi,"مخابرات1"],
                   "دکتر طالبی":[links_linearcontrol_systems_DR_Talebi,"کنترل خطی"],
                   "دکتر شریفی": [links_linearcontrol_systems_DR_Sharifi ,"کنترل خطی"],
                   "1مهندس جعفری":[links_Simulink,"سیمولینک"],
                   "مهندس جعفری2": [links_MATLAB,"متلب"],
-                  "دکتر نیکوفرد": [Gametheory,"نظریه بازی ها"]};
+                  "دکتر نیکوفرد": [Gametheory,"نظریه بازی ها"],
+                 "دکتر خرسندی":[links_Machine1,"ماشین1"]};
 const library = [links_communication_DR_mohammadi,links_linearcontrol_systems_DR_Talebi,links_linearcontrol_systems_DR_Sharifi];
  function createlink(){
     const course_select = document.getElementById('teacher');
@@ -225,7 +257,10 @@ function chooseteacher(){
             break;
         case teachers[keys[5]][1]:
             teacher1.textContent = keys[5];
-            break; 
+            break;
+        case teachers[keys[6]][1]:
+            teacher1.textContent = keys[6];
+            break;
     }
 
 }  
@@ -255,4 +290,5 @@ function CopyToClipboard() {
 const btn = document.querySelector("button");
 const clipboard_ = document.querySelector("#item2");
 clipboard_.addEventListener("click",()=> clipboard_.style.opacity = 0.9);
+
 btn.addEventListener("click",()=> btn.style.opacity = 0.9);
