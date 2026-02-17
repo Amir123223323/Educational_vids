@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="fa">
+    <head>
+        <title>سیستم مدیریت کلاس های مجازی</title>
+        <link rel="stylesheet" href="styles.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    </head>
+    <body>
+        <main>
+            <div id="main_id">
+                <p>انتخاب کلاس </p>
+                <form>
+                    <select name="course" id="course" style="font-family: VazirFont;" onchange="chooseteacher()" onclick="chooseteacher()">
+                            <option value="1" id="talebi" selected>مخابرات1</option>
+                            <option value="3" id="linear_control" >کنترل خطی</option>
+                            <option value="3" id="gametheory" >نظریه بازی ها</option>
+                            <option value="3" id="MATLAB" >متلب</option>
+                            <option value="3" id="Simulink" >سیمولینک</option>
+                            <option value="3" id="machine1" >ماشین1</option>
+                            <option value="3" id="digitalControl">کنترل دیجیتال</option>
+                    </select>
+                </form>
+                <p>استاد درس </p>
+                <form>
+                    <select name="course" id="teacher" style="font-family: VazirFont;" onchange="choosesession()" onclick="choosesession()">
+                        <option value="1" id="teacher1" selected  >دکتر محمدی</option>
+                        <option value="2" id="teacher2"> </option>
+                    </select>
+                </form>
+                <p>شماره جلسه</p>
+                <div><input type="number"  id="number" placeholder="" ></div>
+                <div id="butt"><button type="button" onclick="createlink()" style="font-family: VazirFont;"><span><img src="assets/icons/icons8-download-100.png" alt="" width="15%" height="auto"></span>دریافت لینک</button></div>
+                <div class="linkholder">
+                    <div class="item1"><a id="link"></a></div>
+                    <div class="item2" onclick="CopyToClipboard()">
+                        <img src="assets/icons/icons8-copy-100.png" alt="" width="50%" height="auto" class="icon" id="copy"/>
+                        <img src="assets/icons/icons8-check-100.png" alt="" width="50%" height="auto" class="icon" id="check"/>
+                    </div>
+                </div>
+                
+                <p id="help"></p>
+            </div>
+        </main>
+        <footer style="color: antiquewhite;text-align: center;">Designed by ❤️</footer>
+        <script src="script.js"></script>
+    </body>
+</html>`
